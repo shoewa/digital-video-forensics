@@ -20,6 +20,14 @@ This project utilizes a structured subset of the **IEEE Camera Model** dataset. 
 * **Anomaly Detection Logic:** Classifies files based on metadata stripping and modification signatures.
 * **Visual Forensics:** Generates Seaborn-based visualizations to highlight discrepancies between authentic and manipulated files.
 
+## Dataset
+This project utilizes a structured subset of the **IEEE Camera Model Identification** dataset from Kaggle. 
+
+* **Source:** [IEEE's Signal Processing Society - Camera Model Identification](https://kaggle.com/competitions/sp-society-camera-model-identification)
+* **Citation:** Howard, A., inversion, McDonald, M., Stamm, M., & Bestagini, P. (2017). *IEEE's Signal Processing Society - Camera Model Identification* [Data set]. Kaggle. 
+
+**Note on Data Access:** Due to file size constraints, the raw forensic extraction logs and image datasets are not hosted in this repository. To reproduce this analysis, please download the dataset directly from the Kaggle link above and place the unzipped files into a local `data/` directory before running the Jupyter Notebook.
+
 ## Installation & Usage
 1. Clone the repository:
    ```bash
