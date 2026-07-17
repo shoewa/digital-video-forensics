@@ -7,7 +7,12 @@ This project provides a Python-based forensic analysis workflow designed to inve
 Digital media files inherently carry extensive metadata that can expose sensitive information about the source device, location, and creation environment. This project aims to demonstrate how data analysis techniques can be applied to forensic datasets to secure digital assets and verify their integrity.
 
 ## Dataset
-This project utilizes a structured subset of the **IEEE Camera Model** dataset. The data involves simulated forensic extraction logs detailing EXIF data density, file metadata, and manipulation markers.
+This project utilizes a structured subset of the **IEEE Camera Model Identification** dataset from Kaggle. 
+
+* **Source:** [IEEE's Signal Processing Society - Camera Model Identification](https://kaggle.com/competitions/sp-society-camera-model-identification)
+* **Citation:** Howard, A., inversion, McDonald, M., Stamm, M., & Bestagini, P. (2017). *IEEE's Signal Processing Society - Camera Model Identification* [Data set]. Kaggle. 
+
+**Note on Data Access:** Due to file size constraints, the raw forensic extraction logs and image datasets are not hosted in this repository. To reproduce this analysis, please download the dataset directly from the Kaggle link above and place the unzipped files into a local `data/` directory before running the Jupyter Notebook.
 
 ## Technical Stack
 * **Language:** Python 3
@@ -19,14 +24,6 @@ This project utilizes a structured subset of the **IEEE Camera Model** dataset. 
 * **Automated Data Preprocessing:** Cleans and structures raw forensic extraction logs for analysis.
 * **Anomaly Detection Logic:** Classifies files based on metadata stripping and modification signatures.
 * **Visual Forensics:** Generates Seaborn-based visualizations to highlight discrepancies between authentic and manipulated files.
-
-## Dataset
-This project utilizes a structured subset of the **IEEE Camera Model Identification** dataset from Kaggle. 
-
-* **Source:** [IEEE's Signal Processing Society - Camera Model Identification](https://kaggle.com/competitions/sp-society-camera-model-identification)
-* **Citation:** Howard, A., inversion, McDonald, M., Stamm, M., & Bestagini, P. (2017). *IEEE's Signal Processing Society - Camera Model Identification* [Data set]. Kaggle. 
-
-**Note on Data Access:** Due to file size constraints, the raw forensic extraction logs and image datasets are not hosted in this repository. To reproduce this analysis, please download the dataset directly from the Kaggle link above and place the unzipped files into a local `data/` directory before running the Jupyter Notebook.
 
 ## Installation & Usage
 1. Clone the repository:
